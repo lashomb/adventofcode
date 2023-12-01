@@ -24,7 +24,7 @@ fn main() {
         number_concat.push_str(&first);
         number_concat.push_str(&last);
         println!("{:?}", number_concat);
-        total = total + number_concat.parse::<u32>().unwrap();
+        total += number_concat.parse::<u32>().unwrap();
     }
     println!("{:?}", &total);
 }
